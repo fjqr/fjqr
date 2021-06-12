@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Exo:wght@800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 100vh);
+}
+.background-title,
+.h3Title {
+  grid-row: 1/2;
+}
+.background-title h1 {
+  transform: rotate(270deg);
+  transform-origin: 42% 108%;
+  font-size: 5.5rem;
+  width: 100vw;
+  color: #e2dad0;
+  text-shadow: 0 0 0.1rem #302c31;
+}
+.h3Title h3 {
+  top: -1.2rem;
+  left: -8.5rem;
+  position: relative;
+  display: inline-block;
+  font-size: 5.5rem;
+}
+.h3Title h3:last-child,
+p, a {
+  color: #302c31;
+}
+.retrato {
+  grid-row: 2/-1;
+}
+
+.background-title,
+.retrato {
+  grid-column: 1/3;
+  background-color: #302c31;
+}
+
+#icon {
+  font-weight: 600;
+  font-size: 5.7rem;
+  line-height: 80rem;
+  padding: 1rem;
+}
+#icon,
+figcaption {
+  color: #e2dad0;
+}
+.pic {
+  background-image: linear-gradient(
+      rgba(48, 44, 49, 0.5),
+      rgba(48, 44, 49, 0.5)
+    ),
+    url(./pics/retrato\ fran\ 2\ def\ def.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(0.6px);
+  width: 100%;
+  height: 20rem;
+}
+
+section,
+.h3Title {
+  grid-column: 3/-1;
+  background-color: #e2dad0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Exo", sans-serif;
+}
+
+p,
+figcaption,
+a {
+  font-family: "Didact Gothic", sans-serif;
+}
+figcaption{
+  font-size: 2.5rem;
+  text-align: center;
+}
+p {
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+.contacto,
+.proyectos {
+  margin: 4rem;
+  display: inline-block;
+}
+
+.contacto li,
+.proyectos li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
