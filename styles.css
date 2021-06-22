@@ -9,6 +9,7 @@ main {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 100vh);
+    height: 100vh;
 }
 
 .background-title,
@@ -16,27 +17,31 @@ main {
     grid-row: 1/2;
 }
 
-.background-title h1 {
-    transform: rotate(270deg);
-    transform-origin: 5% 4%;
-    text-shadow: 0 0 0.1rem #302c31;
-    left: 87.5%;
-    top: 75%;
+.name {
+    left: 59%;
+    top: 20.4%;
+}
+
+.full-name {
+    top: 20.4%;
+    left: 59%;
 }
 
 .h3Title h3 {
     top: 16%;
-    left: -9.8%;
-    display: inline-block;
+    left: -16.8%;
 }
 
-.background-title h1,
+.name,
+.full-name,
 .h3Title h3 {
     font-size: 3rem;
     position: relative;
+    display: inline-block;
 }
 
 .h3Title h3:last-child,
+.full-name,
 p,
 a {
     color: #302c31;
@@ -54,6 +59,7 @@ a {
 
 #icon {
     top: 48rem;
+    left: 0;
 }
 
 #icon,
